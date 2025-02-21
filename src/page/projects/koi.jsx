@@ -148,6 +148,7 @@ export const Koi = () => {
           loop
           muted
           autoPlay
+          playsInline
           className="w-full h-[300px] md:w-full md:h-[600px] lg:w-full lg:h-[600px] rounded-2xl object-contain"
         ></video>
       </div>
