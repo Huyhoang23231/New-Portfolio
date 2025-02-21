@@ -32,20 +32,20 @@ export const About = () => {
             className="w-[500px] h-[550px] md:w-[300px] md:h-[340px] lg:w-[300px] lg:h-[340px] xl:w-[280px] xl:h-[320px]  rounded-2xl object-cover"
           ></img>
         </div>
-        <div className="flex justify-center items-center mx-2 sm:mx-10 md:mx-10 lg:mx-10 xl:mx-10">
-          <p className="leading-10">
+        <div className="flex justify-center items-center mx-2 my-10 sm:mx-10 md:mx-10 lg:mx-10">
+          <p className="leading-10 text-xl">
             As an{" "}
-            <span className="text-[#ACACAC]">
+            <span className="text-[#666666]">
               interface and user experience designer
             </span>{" "}
             , along with skills such as wireframe rendering, mockups, and
             prototypes, I can{" "}
-            <span className="text-[#ACACAC]"> contribute</span> and
-            <span className="text-[#ACACAC]"> create </span> intuitive,
+            <span className="text-[#666666]"> contribute</span> and
+            <span className="text-[#666666]"> create </span> intuitive,
             easy-to-use, and bring{" "}
-            <span className="text-[#ACACAC]"> value </span> to users, while
+            <span className="text-[#666666]"> value </span> to users, while
             meeting the business goals of the{" "}
-            <span className="text-[#ACACAC]"> business. </span>
+            <span className="text-[#666666]"> business. </span>
           </p>
         </div>
       </div>
