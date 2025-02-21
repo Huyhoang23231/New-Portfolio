@@ -14,7 +14,7 @@ export const Navbar = () => {
     <div>
       {/* Navbar */}
       {/* Navbar Container */}
-      <div className="xl:w-[1500px] md:mx-2 h-auto m-auto p-2  flex justify-between items-center ">
+      <div className="w-full h-atuo m-auto lg:mx-0 lg:px-3 md:mx-0 md:px-3 p-2 flex justify-between items-center ">
         {/* Navbar Information */}
         <div className="cursor-pointer">
           <Link to="/">

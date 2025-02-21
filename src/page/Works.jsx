@@ -12,10 +12,11 @@ export const Works = () => {
         <video
           alt="Background Video"
           src="/video/3.mp4"
-          className="w-[1500px] h-[700px] sm:h-[350px] md:h-[400px] lg:h-[400px] xl:h-[360px]  m-auto rounded-3xl object-cover"
+          className="w-full h-[500px] md:h-[400px] lg:h-[400px] xl:h-[360px]  m-auto rounded-3xl object-cover"
           autoPlay
           muted
           loop
+          playsInline
         ></video>
       </div>
       {/** Name */}
