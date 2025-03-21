@@ -105,7 +105,7 @@ export const LSante = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       href="https://www.figma.com/design/Jn0RIwbJ5sX5n7sQOJmIdr/Business-Landing-Page?node-id=0-1&t=9dA62Wa3SfPcAkyS-1"
-                      className="cursor-pointer hover:text-[#e3c5a3] transition-all "
+                      className="cursor-pointer hover:text-[#e3c5a3] transition-all underline"
                     >
                       Figma Prototype
                     </a>

@@ -107,7 +107,7 @@ export const Muvi = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       href="https://www.figma.com/design/liyOzlfXyQDeD8M8o8aT52/D%E1%BB%B1-%C3%A1n-c%C3%A1-nh%C3%A2n-(-App-%C4%91%E1%BA%B7t-v%C3%A9-xem-phim-)?node-id=4-4&t=Ex1maySjwki897Ir-1"
-                      className="cursor-pointer hover:text-[#f32a31] transition-all "
+                      className="cursor-pointer hover:text-[#f32a31] transition-all underline "
                     >
                       Figma Prototype
                     </a>

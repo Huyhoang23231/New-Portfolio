@@ -6,3 +6,21 @@ body {
   background-color: #e8e8e8;
   scroll-behavior: smooth;
 }
+
+@font-face {
+  font-family: "GothicDemo";
+  src: local("Gothic Demo"), url("./font/Gothic Demo.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

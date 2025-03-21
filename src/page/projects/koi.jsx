@@ -105,7 +105,7 @@ export const Koi = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       href="https://www.figma.com/design/b4gqieaqYKFwRHupopNJ9Z/Koi-th%C3%A9-(-D%E1%BB%B1-%C3%A1n-c%C3%A1-nh%C3%A2n-)?node-id=0-1&t=3yQz6EnGg7mdJgsc-1"
-                      className="cursor-pointer hover:text-[#ebb25e] transition-all "
+                      className="cursor-pointer hover:text-[#ebb25e] transition-all underline"
                     >
                       Figma Prototype
                     </a>

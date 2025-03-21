@@ -106,7 +106,7 @@ export const HavenOfFairy = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       href="https://www.figma.com/design/zINEBqXuQgKjegp1TXDnwU/Haven-of-Fairy-(-D%E1%BB%B1-%C3%A1n-c%C3%A1-nh%C3%A2n-)?node-id=0-1&t=cQKtDpMhLfMsdhHe-1"
-                      className="cursor-pointer hover:text-[#a49677] transition-all "
+                      className="cursor-pointer hover:text-[#a49677] transition-all underline"
                     >
                       Figma Prototype
                     </a>

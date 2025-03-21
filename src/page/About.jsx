@@ -1,4 +1,5 @@
 import { Title } from "../components/title";
+import TypingEffect from "../components/typing";
 
 export const About = () => {
   Title("About");
@@ -20,7 +21,7 @@ export const About = () => {
       {/** Name */}
       <div className="flex justify-start ml-3">
         <h1 className="text-[80px] md:text-[150px] lg:text-[200px] xl:text-[200px] font-bold">
-          About mE
+          About <TypingEffect text="ME" speed={200} pause={2000} />
         </h1>
       </div>
       {/** Personal Info */}
@@ -28,7 +29,7 @@ export const About = () => {
         <div className="flex justify-center">
           <img
             alt="Avatar About Me"
-            src="/img/Avatar3.jpg"
+            src="/img/Avatar4.jpg"
             className="w-[500px] h-[550px] md:w-[300px] md:h-[340px] lg:w-[300px] lg:h-[340px] xl:w-[280px] xl:h-[320px]  rounded-2xl object-cover"
           ></img>
         </div>
@@ -86,7 +87,9 @@ export const About = () => {
           <p className="font-bold text-2xl mb-4">
             Van Lang University - Software Engineering
           </p>
-          <span className="font-light text-lg">09/2020 - 08/2024</span>
+          <span className="font-light text-lg">
+            09/2020 - 08/2024 - GPA: 3.07
+          </span>
         </div>
       </div>
       {/** Clients */}
@@ -100,6 +103,13 @@ export const About = () => {
             GRWG Creative Hub - UI UX Intern
           </p>
           <span className="font-light text-lg">07/2023 - 05/2024</span>
+        </div>
+        {/** freelancer */}
+        <div className="my-8">
+          <p className="font-bold text-2xl mb-4">
+            Freelancer UI UX | Web Designer
+          </p>
+          <span className="font-light text-lg">06/2024 - Now</span>
         </div>
       </div>
     </div>

@@ -1,5 +1,6 @@
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { Title } from "../components/title";
+import TypingEffect from "../components/typing";
 
 export const Contact = () => {
   Title("Contact");
@@ -20,11 +21,11 @@ export const Contact = () => {
         ></video>
       </div>
       {/** Name */}
-      <div className="grid grid-cols-[2fr_1fr]">
+      <div className="grid grid-cols-1">
         <div className="ml-3">
           <div className="">
             <h1 className="text-[80px] md:text-[150px] lg:text-[200px] xl:text-[200px] font-bold">
-              ContacT
+              Contact <TypingEffect text="ME" speed={200} pause={2000} />
             </h1>
           </div>
           <div className="">
@@ -79,7 +80,7 @@ export const Contact = () => {
           </div>
         </div>
         {/** Triangle */}
-        <div className="hidden sm:hidden md:hidden lg:flex justify-center items-end pl-[100px]">
+        {/* <div className="hidden sm:hidden md:hidden lg:flex justify-center items-end pl-[100px]">
           <svg
             className="hidden sm:hidden md:hidden lg:block"
             width="380"
@@ -93,7 +94,7 @@ export const Contact = () => {
               fill="black"
             />
           </svg>
-        </div>
+        </div> */}
       </div>
     </div>
   );
