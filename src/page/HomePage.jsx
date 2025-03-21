@@ -23,7 +23,19 @@ export const HomePage = () => {
         {/** Name */}
         <div className="absolute bottom-0 left-0 flex justify-center pl-3">
           <h1 className="text-[100px] md:text-[220px] lg:text-[200px] xl:text-[200px] font-bold">
-            Huy <TypingEffect text="Hoang" speed={200} pause={2000} />
+            Huy{" "}
+            <span
+              className="relative inline-block"
+              // Giá trị minWidth cần được điều chỉnh sao cho phù hợp với kích thước chữ "Hoang"
+              style={{ minWidth: "250px" }}
+            >
+              {/* Phần tử ẩn để giữ không gian */}
+              <span style={{ visibility: "hidden" }}>Hoang</span>
+              {/* Hiệu ứng typing được overlay lên trên */}
+              <span className="absolute top-0 left-0">
+                <TypingEffect text="Hoang" speed={200} pause={2000} />
+              </span>
+            </span>
           </h1>
         </div>
       </div>

@@ -21,9 +21,21 @@ export const About = () => {
       {/** Name */}
       <div className="flex justify-start ml-3">
         <h1 className="text-[80px] md:text-[150px] lg:text-[200px] xl:text-[200px] font-bold">
-          About <TypingEffect text="ME" speed={200} pause={2000} />
+          About{" "}
+          <span
+            className="relative inline-block"
+            style={{ minWidth: "80px" }} // Điều chỉnh giá trị này nếu cần
+          >
+            {/* Phần tử ẩn giữ không gian */}
+            <span style={{ visibility: "hidden" }}>ME</span>
+            {/* Overlay hiệu ứng typing */}
+            <span className="absolute top-0 left-0">
+              <TypingEffect text="ME" speed={200} pause={2000} />
+            </span>
+          </span>
         </h1>
       </div>
+
       {/** Personal Info */}
       <div className="grid xl:grid-cols-[0.5fr_2.5fr] md:grid-cols-[1fr_2fr] mx-3 my-40">
         <div className="flex justify-center">

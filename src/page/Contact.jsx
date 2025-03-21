@@ -24,8 +24,11 @@ export const Contact = () => {
       <div className="grid grid-cols-1">
         <div className="ml-3">
           <div className="">
-            <h1 className="text-[80px] md:text-[150px] lg:text-[200px] xl:text-[200px] font-bold">
-              Contact <TypingEffect text="ME" speed={200} pause={2000} />
+            <h1 className="text-[80px] md:text-[150px] lg:text-[200px] xl:text-[200px] font-bold leading-none">
+              Contact{" "}
+              <span style={{ display: "inline-block", minWidth: "120px" }}>
+                <TypingEffect text="ME" speed={200} pause={2000} />
+              </span>
             </h1>
           </div>
           <div className="">

@@ -23,9 +23,21 @@ export const Works = () => {
       {/** Name */}
       <div className="flex justify-start ml-3">
         <h1 className="text-[80px] md:text-[150px] lg:text-[200px] xl:text-[200px] font-bold">
-          My <TypingEffect text="WORKS" speed={200} pause={2000} />
+          My{" "}
+          <span
+            className="relative inline-block"
+            style={{ minWidth: "150px" }} // Điều chỉnh giá trị minWidth cho phù hợp với kích thước chữ "WORKS"
+          >
+            {/* Phần tử ẩn giữ không gian */}
+            <span style={{ visibility: "hidden" }}>WORKS</span>
+            {/* Overlay hiệu ứng typing */}
+            <span className="absolute top-0 left-0">
+              <TypingEffect text="WORKS" speed={200} pause={2000} />
+            </span>
+          </span>
         </h1>
       </div>
+
       {/** Project Title */}
       <div className="flex justify-start ml-3">
         <h1 className="text-[30px] md:text-[30px] lg:text-[30px] italic font-light">
