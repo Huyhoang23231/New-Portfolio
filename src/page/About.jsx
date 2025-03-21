@@ -103,6 +103,14 @@ export const About = () => {
             GRWG Creative Hub - UI UX Intern
           </p>
           <span className="font-light text-lg">07/2023 - 05/2024</span>
+          {/** Agency Describe */}
+          <ul className="mt-4">
+            <li className="italic">- Website interface building.</li>
+            <li className="italic">
+              - Come up with ideas that improve the user experience and simplify
+              the user experience.
+            </li>
+          </ul>
         </div>
         {/** freelancer */}
         <div className="my-8">
@@ -110,6 +118,20 @@ export const About = () => {
             Freelancer UI UX | Web Designer
           </p>
           <span className="font-light text-lg">06/2024 - Now</span>
+          {/** Freelancer Describe */}
+          <ul className="mt-4">
+            <li className="italic">- Web | Mobile design consulting</li>
+            <li className="italic cursor-pointer underline hover:text-[#e2544d]">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                className=""
+                href="https://vgds.design/thanh-vien/ta-huy-hoang-090-491#main"
+              >
+                - Participate in designing Vietnam Government Design System.
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
