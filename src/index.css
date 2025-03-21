@@ -9,7 +9,7 @@ body {
 
 @font-face {
   font-family: "GothicDemo";
-  src: local("Gothic Demo"), url("./font/Gothic Demo.ttf") format("truetype");
+  src: local("GothicDemo"), url("/font/Gothic Demo.ttf") format("truetype");
   font-weight: 400;
 }
 
