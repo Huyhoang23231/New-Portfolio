@@ -23,7 +23,7 @@ export const HomePage = () => {
         {/** Name */}
         <div className="absolute bottom-0 left-0 flex justify-center pl-3">
           <h1 className="text-[100px] md:text-[220px] lg:text-[200px] xl:text-[200px] font-bold">
-            Huy <TypingEffect text="Hoàng" speed={200} pause={2000} />
+            Huy <TypingEffect text="Hoang" speed={200} pause={2000} />
           </h1>
         </div>
       </div>
