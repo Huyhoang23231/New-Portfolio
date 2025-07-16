@@ -124,12 +124,30 @@ export const About = () => {
             </li>
           </ul>
         </div>
+        {/** aq technology */}
+        <div className="my-8">
+          <p className="font-bold text-2xl mb-4">
+            AQ Technology - UI UX Designer | Business Analyst Intern
+          </p>
+          <span className="font-light text-lg">04/2025 - 07/2025</span>
+          {/** AQ Describe */}
+          <ul className="mt-4">
+            <li className="italic">
+              - Assist PO in planning and executing various projects, ensuring
+              adherence to project deadlines and objectives.
+            </li>
+            <li className="italic">
+              - Visit clients to gather requirements. Draw Wireframes, User
+              Flow, Prototyped, UX Improvement, Brochure Design.
+            </li>
+          </ul>
+        </div>
         {/** freelancer */}
         <div className="my-8">
           <p className="font-bold text-2xl mb-4">
             Freelancer UI UX | Web Designer
           </p>
-          <span className="font-light text-lg">06/2024 - Now</span>
+          <span className="font-light text-lg">07/2025 - Now</span>
           {/** Freelancer Describe */}
           <ul className="mt-4">
             <li className="italic">- Web | Mobile design consulting</li>
