@@ -129,7 +129,7 @@ export const About = () => {
           <p className="font-bold text-2xl mb-4">
             AQ Technology - UI UX Designer | Business Analyst
           </p>
-          <span className="font-light text-lg">04/2025 - 07/2025</span>
+          <span className="font-light text-lg">03/2025 - 07/2025</span>
           {/** AQ Describe */}
           <ul className="mt-4">
             <li className="italic">
