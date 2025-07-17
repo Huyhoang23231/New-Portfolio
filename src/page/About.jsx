@@ -80,7 +80,7 @@ export const About = () => {
           <p className="font-bold text-2xl mb-4">tools</p>
           <span className="font-light text-lg">
             Figma - Adobe Illustrator - Adobe Photoshop - Canva - Spline - Wix
-            Studio - Github - Lottiefiles - Fimora - Capcut - Clipchamp
+            Studio - Framer - Github - Lottiefiles - Fimora - Capcut - Clipchamp
           </span>
         </div>
         {/** technical */}
