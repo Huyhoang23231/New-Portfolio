@@ -79,6 +79,20 @@ export const Contact = () => {
                   className="rotate-[-45deg] transform transition duration-300 group-hover:rotate-0 "
                 />
               </li>
+              <li className="group text-xl font-bold flex justify-center items-center hover:text-gray-400 transition duration-300 cursor-pointer ml-0 mt-4 md:mt-0 lg:mt-0 sm:ml-0 md:ml-8 lg:ml-8">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.linkedin.com/in/huy-ho%C3%A0ng-736330221/"
+                  className=""
+                >
+                  LinkedIn
+                </a>
+                <ArrowForwardIcon
+                  fontSize="medium"
+                  className="rotate-[-45deg] transform transition duration-300 group-hover:rotate-0 "
+                />
+              </li>
             </ul>
           </div>
         </div>
