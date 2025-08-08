@@ -1,9 +1,23 @@
 import { Outlet, Link } from "react-router-dom";
 import { Title } from "../components/title";
 import TypingEffect from "../components/typing";
+import ImageModal from "../components/ImageModal";
+import { useState } from "react";
 
 export const Works = () => {
   Title("Works");
+
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const posters = [
+    { src: "/img/Poster/Girl On Glass.png" },
+    { src: "/img/Poster/Eye Flower.png" },
+    { src: "/img/Poster/Eye.png" },
+    { src: "/img/Poster/The Void.png" },
+    { src: "/img/Poster/ablume_blue.png" },
+    { src: "/img/Poster/ablume_pink.png" },
+  ];
+
   return (
     // Main Container
     <div>
@@ -333,6 +347,40 @@ export const Works = () => {
           </div> */}
         </div>
       </div>
+
+      {/** Project Poster Title */}
+      <div className="flex justify-start ml-3 my-10">
+        <h1 className="text-[30px] md:text-[30px] lg:text-[30px] italic font-light">
+          My poster
+        </h1>
+      </div>
+
+      {/** Project Poster Gallery */}
+      <div
+        className="w-full h-auto mx-auto grid gap-4 justify-items-center
+                grid-cols-1 sm:grid-cols-3 lg:grid-cols-4"
+      >
+        {posters.map((poster, index) => (
+          <div
+            key={index}
+            className="w-[290px] h-[370px] rounded-sm overflow-hidden cursor-pointer"
+            onClick={() => setSelectedImage(poster.src)}
+          >
+            <img
+              className="object-cover w-[290px] h-[370px] overflow-hidden hover:scale-105 transition-transform duration-300"
+              src={poster.src}
+              alt={`Poster ${index + 1}`}
+            />
+          </div>
+        ))}
+      </div>
+
+      {/* Modal zoom ảnh */}
+      <ImageModal
+        image={selectedImage}
+        onClose={() => setSelectedImage(null)}
+      />
+
       <Outlet />
     </div>
   );
