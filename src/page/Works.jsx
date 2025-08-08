@@ -10,12 +10,12 @@ export const Works = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   const posters = [
-    { src: "/img/Poster/Girl On Glass.png" },
-    { src: "/img/Poster/Eye Flower.png" },
-    { src: "/img/Poster/Eye.png" },
-    { src: "/img/Poster/The Void.png" },
-    { src: "/img/Poster/ablume_blue.png" },
-    { src: "/img/Poster/ablume_pink.png" },
+    { src: "/img/Poster/Girl On Glass.webp" },
+    { src: "/img/Poster/Eye Flower.webp" },
+    { src: "/img/Poster/Eye.webp" },
+    { src: "/img/Poster/The Void.webp" },
+    { src: "/img/Poster/ablume_blue.webp" },
+    { src: "/img/Poster/ablume_pink.webp" },
   ];
 
   return (
@@ -370,6 +370,7 @@ export const Works = () => {
               className="object-cover w-[290px] h-[370px] overflow-hidden hover:scale-105 transition-transform duration-300"
               src={poster.src}
               alt={`Poster ${index + 1}`}
+              loading="lazy" // Lazy load ảnh giúp giảm tải dung lượng
             />
           </div>
         ))}
