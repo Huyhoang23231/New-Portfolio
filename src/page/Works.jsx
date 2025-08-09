@@ -10,12 +10,30 @@ export const Works = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   const posters = [
-    { src: "/img/Poster/Girl On Glass.webp" },
-    { src: "/img/Poster/Eye Flower.webp" },
-    { src: "/img/Poster/Eye.webp" },
-    { src: "/img/Poster/The Void.webp" },
-    { src: "/img/Poster/ablume_blue.webp" },
-    { src: "/img/Poster/ablume_pink.webp" },
+    {
+      thumb: "/img/Poster/thumb/Girl On Glass.webp",
+      full: "/img/Poster/Girl On Glass.webp",
+    },
+    {
+      thumb: "/img/Poster/thumb/Eye Flower.webp",
+      full: "/img/Poster/Eye Flower.webp",
+    },
+    {
+      thumb: "/img/Poster/thumb/Eye.webp",
+      full: "/img/Poster/Eye.webp",
+    },
+    {
+      thumb: "/img/Poster/thumb/The Void.webp",
+      full: "/img/Poster/The Void.webp",
+    },
+    {
+      thumb: "/img/Poster/thumb/ablume_blue.webp",
+      full: "/img/Poster/ablume_blue.webp",
+    },
+    {
+      thumb: "/img/Poster/thumb/ablume_pink.webp",
+      full: "/img/Poster/ablume_pink.webp",
+    },
   ];
 
   return (
@@ -364,13 +382,15 @@ export const Works = () => {
           <div
             key={index}
             className="w-[290px] h-[370px] rounded-sm overflow-hidden cursor-pointer"
-            onClick={() => setSelectedImage(poster.src)}
+            onClick={() => setSelectedImage(poster.full)}
           >
             <img
-              className="object-cover w-[290px] h-[370px] overflow-hidden hover:scale-105 transition-transform duration-300"
-              src={poster.src}
+              src={poster.thumb}
               alt={`Poster ${index + 1}`}
-              loading="lazy" // Lazy load ảnh giúp giảm tải dung lượng
+              loading="lazy"
+              width="290"
+              height="370"
+              className="object-cover w-[290px] h-[370px] overflow-hidden hover:scale-105 transition-transform duration-300"
             />
           </div>
         ))}
