@@ -3,6 +3,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import { Title } from "../components/title";
 import { useState } from "react";
 import NorthEastIcon from "@mui/icons-material/NorthEast";
+import LockIcon from "@mui/icons-material/Lock";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
@@ -26,18 +27,49 @@ export const Navbar = () => {
           </Link>
         </div>
         <div className="flex items-center">
-          <button className="btn relative inline-flex items-center justify-start overflow-hidden font-medium transition-all bg-[#D9D9D9] rounded hover:bg-white group py-1.5 px-2.5 mr-4 cursor-pointer">
-            <span className="w-56 h-48 rounded bg-black absolute bottom-0 left-0 translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
-            <span className="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">
+          <button
+            disabled
+            // className="btn relative inline-flex items-center justify-start overflow-hidden font-medium transition-all bg-[#D9D9D9] rounded hover:bg-white group py-1.5 px-2.5 mr-4 cursor-pointer"
+            className="btn relative inline-flex items-center justify-start overflow-hidden font-medium transition-all
+             rounded py-1.5 px-2.5 mr-4
+             bg-[#D9D9D9] text-[#888888]
+             cursor-not-allowed
+             group
+             hover:bg-[#D9D9D9] hover:text-[#888888]"
+          >
+            {/* <span className="w-56 h-48 rounded bg-black absolute bottom-0 left-0 translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span> */}
+
+            {/* Bỏ hiệu ứng hover trên phần nền */}
+            <span className="w-56 h-48 rounded bg-[#D9D9D9] absolute bottom-0 left-0 ease-out duration-0 transition-none mb-9 ml-9"></span>
+
+            {/* <span className="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">
               <a
                 href="https://drive.google.com/file/d/19kZ6kzs-wzpCv3GWL95Q09_8k0zPF8TG/view?usp=sharing"
+                onClick={(e) => e.preventDefault()}
                 target="_blank"
+                className="pointer-events-none"
                 rel="noopener noreferrer"
               >
                 Resume
+                <LockIcon fontSize="small" className="center ml-2" />
+              </a>
+            </span> */}
+
+            {/* Bỏ hoàn toàn group-hover trên text */}
+            <span className="relative w-full text-left text-[#888888] transition-none">
+              <a
+                href="https://drive.google.com/file/d/19kZ6kzs-wzpCv3GWL95Q09_8k0zPF8TG/view?usp=sharing"
+                onClick={(e) => e.preventDefault()}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="pointer-events-none"
+              >
+                Resume
+                <LockIcon fontSize="small" className="center ml-2" />
               </a>
             </span>
           </button>
+
           <MenuOpenIcon
             fontSize="large"
             className="hover:bg-[#D9D9D9] hover:rounded-md transition-all ease-in-out duration-500 cursor-pointer"

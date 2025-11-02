@@ -27,12 +27,12 @@ export const Works = () => {
       full: "/img/Poster/The Void.webp",
     },
     {
-      thumb: "/img/Poster/thumb/ablume_blue.webp",
-      full: "/img/Poster/ablume_blue.webp",
+      thumb: "/img/Poster/thumb/ablume_blue.jpg",
+      full: "/img/Poster/ablume_blue.jpg",
     },
     {
-      thumb: "/img/Poster/thumb/ablume_pink.webp",
-      full: "/img/Poster/ablume_pink.webp",
+      thumb: "/img/Poster/thumb/ablume_pink.jpg",
+      full: "/img/Poster/ablume_pink.jpg",
     },
   ];
 
