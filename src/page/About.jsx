@@ -151,12 +151,12 @@ export const About = () => {
           {/** Freelancer Describe */}
           <ul className="mt-4">
             <li className="italic">- Web | Mobile design consulting</li>
-            <li className="italic cursor-pointer underline hover:text-[#e2544d]">
+            <li className="italic">
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 className=""
-                href="https://vgds.design/thanh-vien/ta-huy-hoang-090-491#main"
+                // href="https://vgds.design/thanh-vien/ta-huy-hoang-090-491#main"
               >
                 - Participate in designing Vietnam Government Design System.
               </a>

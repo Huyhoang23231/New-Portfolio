@@ -37,7 +37,7 @@ export const Contact = () => {
             </p>
             <ul className="flex flex-col justify-start items-start gap-y-4 md:gap-y-0 lg:gap-y-0 md:flex-row lg:flex-row py-10 md:py-4 lg:py-4">
               <li className="group text-xl font-bold flex justify-center items-center hover:text-gray-400 transition duration-300 cursor-pointer">
-                <a
+                {/* <a
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://www.instagram.com/hoang.uiux?igsh=aXY3ZHMxeHZmNjRu&utm_source=qr"
@@ -49,9 +49,9 @@ export const Contact = () => {
                 <ArrowForwardIcon
                   fontSize="medium"
                   className="rotate-[-45deg] transform transition duration-300 group-hover:rotate-0 "
-                />
+                /> */}
               </li>
-              <li className="group text-xl font-bold flex justify-center items-center hover:text-gray-400 transition duration-300 cursor-pointer ml-0 mt-4 md:mt-0 lg:mt-0 sm:ml-0 md:ml-8 lg:ml-8">
+              <li className="group text-xl font-bold flex justify-center items-center hover:text-gray-400 transition duration-300 cursor-pointer ml-0 mt-4 md:mt-0 lg:mt-0 sm:ml-0">
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
